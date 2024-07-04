@@ -1,17 +1,7 @@
-/*
- Query the list of CITY names from STATION that either do not start with
- vowels and do not end with vowels. Your result cannot contain duplicates.
- */
-
-CREATE TABLE STATION(
-     ID SERIAL PRIMARY KEY,
-     CITY VARCHAR(21),
-     STATE VARCHAR(2),
-     LAT_N NUMERIC,
-     LONG_N NUMERIC
- );
-
-SELECT DISTINCT STATION.CITY
-FROM STATION
-WHERE LEFT(CITY, 1) NOT IN ('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u')
-AND RIGHT(CITY, 1) NOT IN ('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u');
+Create table If Not Exists Products (product_id int, low_fats ENUM('Y', 'N'), recyclable ENUM('Y','N'));
+Truncate table Products;
+insert into Products (product_id, low_fats, recyclable) values ('0', 'Y', 'N');
+insert into Products (product_id, low_fats, recyclable) values ('1', 'Y', 'Y');
+insert into Products (product_id, low_fats, recyclable) values ('2', 'N', 'Y');
+insert into Products (product_id, low_fats, recyclable) values ('3', 'Y', 'Y');
+insert into Products (product_id, low_fats, recyclable) values ('4', 'N', 'N');

@@ -1,0 +1,13 @@
+/*
+Query the average population for all cities in CITY, rounded down to the nearest integer.
+ */
+
+CREATE TABLE CITY (
+    ID SERIAL PRIMARY KEY,
+    NAME VARCHAR(17) NOT NULL,
+    COUNTRYCODE VARCHAR(3) NOT NULL,
+    DISTRICT VARCHAR(20) NOT NULL,
+    POPULATION NUMERIC NOT NULL
+);
+
+SELECT ROUND(AVG(POPULATION), 0) FROM CITY;

@@ -1,0 +1,13 @@
+/*
+Query the average population of all cities in CITY where District is California.
+ */
+
+CREATE TABLE CITY (
+    ID SERIAL PRIMARY KEY,
+    NAME VARCHAR(17) NOT NULL,
+    COUNTRYCODE VARCHAR(3) NOT NULL,
+    DISTRICT VARCHAR(20) NOT NULL,
+    POPULATION NUMERIC NOT NULL
+);
+
+SELECT AVG(POPULATION) FROM CITY WHERE DISTRICT = 'California';

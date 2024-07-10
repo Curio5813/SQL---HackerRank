@@ -1,5 +1,5 @@
 /*
-Query the average population of all cities in CITY where District is California.
+Query the average population for all cities in CITY, rounded down to the nearest integer.
  */
 
 CREATE TABLE CITY (
@@ -10,4 +10,4 @@ CREATE TABLE CITY (
     POPULATION NUMERIC NOT NULL
 );
 
-SELECT AVG(POPULATION) FROM CITY WHERE DISTRICT = 'California';
+SELECT ROUND(AVG(POPULATION), 0) FROM CITY;

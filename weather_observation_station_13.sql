@@ -1,6 +1,6 @@
 /*
-Query the sum of Northern Latitudes (LAT_N) from STATION having values greater
-than 38.7880 and less than 137.2345. Truncate your answer to 4 decimal places.
+Query the sum of Northern Latitudes (LAT_N) from STATION having values greater than 38.7880 and less than 137.2345. 
+Truncate your answer to 4 decimal places.
 */
 
 CREATE TABLE STATION (ID NUMERIC, CITY VARCHAR(21), STATE VARCHAR(2), LAT_N NUMERIC, LONG_W NUMERIC);

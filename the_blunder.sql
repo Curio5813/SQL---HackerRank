@@ -9,6 +9,8 @@ Write a query calculating the amount of error (i.e.:  average monthly salaries),
 and round it up to the next integer.
 */
 
+USE
+
 CREATE TABLE EMPLOYEES (ID INTEGER, Name VARCHAR(50), Salary INTEGER);
 
 INSERT INTO EMPLOYEES (ID, Name, Salary) VALUE(1, 'Kristeen', 1420);

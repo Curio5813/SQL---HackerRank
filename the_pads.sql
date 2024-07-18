@@ -17,8 +17,6 @@ same [occupation_count], they should be ordered alphabetically.
 Note: There will be at least two entries in the table for each type of occupation.
 */
 
-USE HckerRank;
-
 CREATE TABLE OCCUPATIONS (Name VARCHAR(50), Occupation VARCHAR(50));
 
 INSERT INTO OCCUPATIONS (Name, Occupation) VALUES ('Samantha', 'Doctor');
